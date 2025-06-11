@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import Head from 'next/head';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import { theme } from '../theme'; // adjust path if needed
+import { theme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   * {
