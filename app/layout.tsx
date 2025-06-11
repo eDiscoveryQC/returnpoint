@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import Head from 'next/head';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import { theme } from './theme';
+import { theme } from './theme'; // theme.ts is in the app folder
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -45,8 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           name="description"
           content="Effortless returns, right from your building. No printer. No box. No hassle."
         />
-        <link rel="icon" href="/icons/box.svg" />
-        <link rel="apple-touch-icon" href="/icons/box.svg" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
