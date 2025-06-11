@@ -12,7 +12,7 @@ const theme = {
     accent: '#FF9900', // Amazon-style orange accent
   },
   fonts: {
-    body: "'Helvetica Neue', 'Segoe UI', 'Roboto', sans-serif",
+    body: "'Inter', 'Helvetica Neue', 'Segoe UI', 'Roboto', sans-serif",
   },
 };
 
@@ -24,16 +24,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    background-color: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
-    font-family: ${props => props.theme.fonts.body};
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
+    font-family: ${(props) => props.theme.fonts.body};
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
   a {
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
     text-decoration: none;
     font-weight: 500;
   }
