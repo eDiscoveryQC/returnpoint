@@ -7,8 +7,6 @@ import {
   Button,
   SimpleGrid,
   VStack,
-  Center,
-  Image,
 } from '@chakra-ui/react';
 
 const features = [
@@ -37,14 +35,7 @@ const features = [
 export default function LandingPage() {
   return (
     <Box as="main" pt={{ base: '6rem', md: '8rem' }} px={{ base: 4, md: 8 }}>
-      {/* Hero Section */}
-      <VStack
-        maxW="700px"
-        mx="auto"
-        textAlign="center"
-        spacing={6}
-        mb={16}
-      >
+      <VStack maxW="700px" mx="auto" textAlign="center" spacing={6} mb={16}>
         <Heading
           as="h1"
           fontSize={{ base: '3xl', md: '5xl' }}
@@ -68,13 +59,7 @@ export default function LandingPage() {
         </Button>
       </VStack>
 
-      {/* Features Grid */}
-      <SimpleGrid
-        columns={{ base: 1, md: 2 }}
-        spacing={12}
-        maxW="900px"
-        mx="auto"
-      >
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={12} maxW="900px" mx="auto">
         {features.map(({ title, description }) => (
           <Box
             key={title}
